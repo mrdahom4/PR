@@ -17,6 +17,7 @@ const queue = new Map();
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
+  client.user.setGame(`Pure Shop`,"http://twitch.tv/S-F")
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -91,23 +92,7 @@ client.on("message", message => {
 });
 
 	
-client.on('ready', function(){
-    var ms = 20000 ;    
-    var setGame = ['Pure Shop'];    
-    var i = -1;    
-    var j = 0;    
-    setInterval(function (){    
-        if( i == -1 ){    
-j = 1;    
-       }    
-        if( i == (setGame.length)-1 ){    
-            j = -1;    
-      }    
-       i = i+j;    
-        client.user.setGame(setGame[i],`https://youtu.be/jzUz4ziN4RY`);    
-}, ms);    
-    
-}); 
+
 
 client.on('message',async message => {
   if(message.content.startsWith("#voice")) {
