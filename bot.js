@@ -957,7 +957,7 @@ client.on('message', async xkiller => {
    
                e.edit(`**جري جمع البينات**`)
    
-              let xkilleryt = xkiller.guild.channels.find("name","تقديم")
+              let xkilleryt = xkiller.guild.channels.find("name","طلب-رتبه-باع")
    
               setTimeout(() => {
    
