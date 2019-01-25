@@ -915,7 +915,9 @@ channel.guild.owner.send(`<@!${channelremover.id}>
   });
 
 
-
+client.on('guildMemberAdd', member=> {
+    member.addRole(member.guild.roles.find("name","Pure"));
+    });
 
 
 
