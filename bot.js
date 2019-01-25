@@ -908,7 +908,7 @@ client.on('guildMemberAdd', member=> {
 
 client.on('message', async xkiller => {
  
-    if(xkiller.content.startsWith("طلب")) {
+    if(xkiller.content.startsWith("تقديم")) {
    
       let lang = '';
    
