@@ -15,8 +15,7 @@ const YouTube = require('simple-youtube-api');
 const queue = new Map();
 const { Client, Util } = require('discord.js');
 const youtube = new YouTube("AIzaSyAdORXg7UZUo7sePv97JyoDqtQVi3Ll0b8");
-const queue = new Map();
-  
+
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
