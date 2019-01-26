@@ -816,7 +816,7 @@ client.on('guildMemberAdd', member => {
     const ei = invites[member.guild.id];
     const invite = guildInvites.find(i => ei.get(i.code).uses < i.uses);
     const inviter = client.users.get(invite.inviter.id);
-    const Galal = member.guild.channels.find("name", "welcome");
+    const Galal = member.guild.channels.find("name", "chat");
      Galal.send(`**<@${member.user.id}>
 Welcome - To - Pure :musical_score: ! 
 By : <@${inviter.id}> .**`);
