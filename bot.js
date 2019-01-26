@@ -798,7 +798,7 @@ client.on('message', message => {
   
   if (message.content === '#avatar') {
     
-    message.reply("**صوره ${message.guild.name}: message.author.avatarURL**");
+    message.reply("**صوره message.author.avatarURL**");
   }
 });
 
