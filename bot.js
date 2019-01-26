@@ -7,6 +7,8 @@ const fs = require('fs');
 const getYoutubeID = require('get-youtube-id');
 const fetchVideoInfo = require('youtube-info');
 const yt_api_key = "AIzaSyDeoIH0u1e72AtfpwSKKOSy3IPp2UHzqi4";
+const invites = {};
+const wait = require('util').promisify(setTimeout);
 const Canvas = require("canvas");
 const jimp = require("jimp");
 let points = {}
@@ -800,7 +802,7 @@ welcomer.sendFile(canvas.toBuffer())
 });
 
 client.on('ready', () => {
-  wait(1900);
+ wait(1900);
 
   client.guilds.forEach(g => {
     g.fetchInvites().then(guildInvites => {
