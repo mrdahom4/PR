@@ -63,7 +63,7 @@ client.on(`message`, msg => {
             var cmd = args[1];
             if (!cmd) return msg.reply(`what command you are looking for ?`);
             switch(cmd) {
-                case `move`:
+                case `vipmove`:
                     var guild = args[2];
                     if (!guild) return msg.reply(`I can't find this server \\:(`);
                     if (isNaN(parseInt(guild))) return msg.reply(`I can't find this server \\:(`);
