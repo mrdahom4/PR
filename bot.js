@@ -559,7 +559,7 @@ if (message.author.bot) return;
     const Embed11 = new Discord.RichEmbed()
         .setColor("RANDOM")
         .setDescription("تم ارسالك في الخاص")
-   .setFooter("اسم سيررك ",'رابط صوره سيرفرك')
+   .setFooter("Pure Shop  ",'https://cdn.discordapp.com/attachments/538375646347395083/539780261353750537/65464641.png')
                    .setTimestamp()
 				message.channel.send('** تم أرسال الرابط برسالة خاصة **');
 
@@ -913,7 +913,7 @@ welcomer.sendFile(canvas.toBuffer())
 
 
 client.on('ready', () => {
-  wait(2500);
+  wait(2000);
 
   client.guilds.forEach(g => {
     g.fetchInvites().then(guildInvites => {
