@@ -913,7 +913,7 @@ welcomer.sendFile(canvas.toBuffer())
 
 
 client.on('ready', () => {
-  wait(2000);
+  wait(2500);
 
   client.guilds.forEach(g => {
     g.fetchInvites().then(guildInvites => {
